@@ -2,7 +2,7 @@ version: "3"
 
 services:
   oracle-xe-11g-r2:
-    image: sath89/oracle-xe-11g
+    image: wnameless/oracle-xe-11g-r2:18.04-apex
     container_name: oracle-xe-11g-r2
     restart: always
     ports:
@@ -11,4 +11,4 @@ services:
     environment:
       - TZ=Asia/Seoul
     volumes:
-      - ./oracle-xe-11g-r2:/u01/app/oracle sath89/oracle-xe-11g
+      - ./oracle-xe-11g-r2:/u01/app/oracle wnameless/oracle-xe-11g-r2:18.04-apex
