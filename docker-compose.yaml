@@ -4,9 +4,10 @@ services:
   oracle-xe-11g-r2:
     image: wnameless/oracle-xe-11g-r2:18.04-apex
     container_name: oracle-xe-11g-r2
+    restart: always
     ports:
       - "1521:1521"
     environment:
       - TZ=Asia/Seoul
     volumes:
-      - ./oracle-xe-11g-r2:/opt/oracle/oradata
+      - ./oracle-xe-11g-r2:/u01/app/oracle/oradata
