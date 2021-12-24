@@ -14,7 +14,7 @@ password: oracle
 ## Web admin
 
 ```
-http://localhost:9090/apex/
+http://localhost:9090/apex/apex_admin
 username: ADMIN
 password: Oracle_11g
 ```
