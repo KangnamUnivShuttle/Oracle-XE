@@ -8,8 +8,18 @@ services:
     ports:
       - "1521:1521"
       - "9090:8080"
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 10m
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1024M
     environment:
       - TZ=Asia/Seoul
       - ORACLE_ALLOW_REMOTE=true
     volumes:
-      - ./oracle-xe-11g-r2:/u01/app/oracle wnameless/oracle-xe-11g-r2:18.04-apex
+      - ./oracle-xe-11g-r2:/u01/app/oracle
