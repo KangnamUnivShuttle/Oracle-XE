@@ -22,4 +22,4 @@ services:
       - TZ=Asia/Seoul
       - ORACLE_ALLOW_REMOTE=true
     volumes:
-      - ./oracle-xe-11g-r2:/u01/app/oracle
+      - ./oracle-xe-11g-r2:/u01/app/oracle wnameless/oracle-xe-11g-r2
